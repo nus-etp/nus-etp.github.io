@@ -1,0 +1,43 @@
+---
+const projects = [
+  {
+    name: 'hermenaut',
+    href: '/hermenaut/',
+    description: 'Daily company intelligence for the NUSX watchlist',
+  },
+]
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NUSX Labs</title>
+  </head>
+  <body>
+    <main>
+      <h1>NUSX Labs</h1>
+      <ul>
+        {projects.map((project) => (
+          <li>
+            <a href={project.href}>{project.name}</a> — {project.description}
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    max-width: 40rem;
+    margin: 4rem auto;
+    padding: 0 1rem;
+  }
+</style>
