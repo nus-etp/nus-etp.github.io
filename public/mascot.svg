@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-labelledby="title">
+  <title id="title">NUSX dog mascot</title>
+  <circle cx="120" cy="120" r="116" fill="#FFF3E0"/>
+  <ellipse cx="120" cy="214" rx="70" ry="10" fill="#003D7C" opacity="0.12"/>
+  <path d="M60 210c0-40 26-66 60-66s60 26 60 66z" fill="#E8A55B"/>
+  <path d="M96 210c0-26 10-44 24-44s24 18 24 44z" fill="#FFF8EE"/>
+  <path d="M84 150l36 16 36-16v14l-36 16-36-16z" fill="#003D7C"/>
+  <circle cx="120" cy="180" r="9" fill="#EF7C00" stroke="#C25F00" stroke-width="2"/>
+  <text x="120" y="184" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">X</text>
+  <path d="M58 58c-16 4-26 30-20 56 4 16 18 20 26 10 8-12 10-42 6-58-2-8-6-10-12-8z" fill="#8B5A2B"/>
+  <path d="M182 58c16 4 26 30 20 56-4 16-18 20-26 10-8-12-10-42-6-58 2-8 6-10 12-8z" fill="#8B5A2B"/>
+  <ellipse cx="120" cy="100" rx="58" ry="54" fill="#E8A55B"/>
+  <ellipse cx="148" cy="88" rx="18" ry="20" fill="#C9813A"/>
+  <ellipse cx="120" cy="124" rx="32" ry="24" fill="#FFF8EE"/>
+  <circle cx="98" cy="94" r="8" fill="#2B1B10"/>
+  <circle cx="142" cy="94" r="8" fill="#2B1B10"/>
+  <circle cx="101" cy="91" r="3" fill="#fff"/>
+  <circle cx="145" cy="91" r="3" fill="#fff"/>
+  <ellipse cx="84" cy="112" rx="8" ry="5" fill="#F4A3A3" opacity="0.7"/>
+  <ellipse cx="156" cy="112" rx="8" ry="5" fill="#F4A3A3" opacity="0.7"/>
+  <ellipse cx="120" cy="112" rx="9" ry="6.5" fill="#2B1B10"/>
+  <path d="M120 118v6M120 124c-4 6-12 6-14 0M120 124c4 6 12 6 14 0" fill="none" stroke="#2B1B10" stroke-width="3" stroke-linecap="round"/>
+  <path d="M113 130c0 10 14 10 14 0z" fill="#F07C8A"/>
+</svg>

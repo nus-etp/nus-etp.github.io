@@ -1,30 +1,17 @@
----
-const projects = [
-  {
-    name: 'hermenaut',
-    href: '/hermenaut/',
-    description: 'Daily company intelligence for the NUSX watchlist',
-  },
-]
----
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NUSX Labs</title>
+    <title>NUSX Labs — Coming Soon</title>
+    <link rel="icon" href="/mascot.svg" type="image/svg+xml" />
   </head>
   <body>
     <main>
-      <h1>NUSX Labs</h1>
-      <ul>
-        {projects.map((project) => (
-          <li>
-            <a href={project.href}>{project.name}</a> — {project.description}
-          </li>
-        ))}
-      </ul>
+      <img class="logo" src="/nusx-logo.svg" alt="NUSX" width="160" height="50" />
+      <img src="/mascot.svg" alt="NUSX dog mascot" width="240" height="240" />
+      <h1>Coming Soon</h1>
+      <p>NUSX Labs is cooking...</p>
     </main>
   </body>
 </html>
@@ -36,8 +23,32 @@ const projects = [
   body {
     font-family: system-ui, sans-serif;
     line-height: 1.6;
-    max-width: 40rem;
-    margin: 4rem auto;
+    min-height: 100vh;
+    margin: 0;
     padding: 0 1rem;
+    display: grid;
+    place-items: center;
+    text-align: center;
+  }
+  img {
+    max-width: 60vw;
+    height: auto;
+  }
+  .logo {
+    display: block;
+    margin: 0 auto 2rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      filter: invert(1);
+    }
+  }
+  h1 {
+    margin: 1rem 0 0.25rem;
+    color: #ef7c00;
+  }
+  p {
+    margin: 0;
+    opacity: 0.8;
   }
 </style>
