@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NUSX Plaud Team Sync — Privacy Policy</title>
+    <link rel="icon" href="/mascot.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="/nusx-logo.svg" alt="NUSX" width="120" height="38" />
+      <h1>NUSX Plaud Team Sync — Privacy Policy</h1>
+      <p class="updated">Last updated: 7 November 2026</p>
+
+      <p>
+        NUSX Plaud Team Sync is a Chrome extension for NUSX staff. It copies your own Plaud recordings into the
+        Team files of your NUSX Plaud Team workspace.
+      </p>
+
+      <h2>What it handles</h2>
+      <ul>
+        <li>
+          <strong>Plaud sign-in data.</strong> The Plaud workspace token and refresh token that Plaud Web issues to
+          you, your Plaud API region and your current workspace ID. It reads the Plaud sign-in cookie
+          (<code>pld_ut</code>) on <code>plaud.ai</code> to renew access.
+        </li>
+        <li>
+          <strong>Recording metadata.</strong> The list of your Plaud recordings: IDs, names, start times,
+          durations and whether each has a transcript. The extension does not download or read the audio,
+          transcripts or summaries.
+        </li>
+        <li>
+          <strong>Its own settings and history.</strong> The team workspace and folder you chose, sync options, and
+          which recordings it has already shared or asked Plaud to transcribe.
+        </li>
+      </ul>
+
+      <h2>What it does with it</h2>
+      <ul>
+        <li>
+          Lists your recordings, asks Plaud to transcribe the ones without a transcript, and shares eligible
+          recordings into your team's Team files, using Plaud's own API on your behalf.
+        </li>
+        <li>All of this data stays in <code>chrome.storage.local</code> in your Chrome profile.</li>
+        <li>
+          It is sent only to Plaud (<code>*.plaud.ai</code>), over HTTPS. It is not sent to NUSX, the developer, or
+          any other third party, and there is no analytics or tracking.
+        </li>
+      </ul>
+
+      <h2>Sharing and retention</h2>
+      <ul>
+        <li>
+          The extension does not sell or transfer your data, and does not use it for any purpose other than the
+          single purpose above.
+        </li>
+        <li>
+          Recordings it shares become visible to all members of your Plaud Team workspace, as with sharing from
+          Plaud Web. Plaud's own privacy policy governs data held by Plaud.
+        </li>
+        <li>Removing the extension deletes everything it stored in your browser.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>NUSX AI &amp; Systems, <a href="mailto:song.luar@nus.edu.sg">song.luar@nus.edu.sg</a>.</p>
+    </main>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+  body {
+    font-family: system-ui, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 2rem 1rem 4rem;
+  }
+  main {
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+  .logo {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+  @media (prefers-color-scheme: dark) {
+    .logo {
+      filter: invert(1);
+    }
+  }
+  h1 {
+    color: #ef7c00;
+    line-height: 1.25;
+    margin: 0 0 0.25rem;
+  }
+  h2 {
+    margin-top: 2rem;
+  }
+  .updated {
+    margin-top: 0;
+    opacity: 0.7;
+  }
+  code {
+    font-size: 0.9em;
+  }
+</style>
