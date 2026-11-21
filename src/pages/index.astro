@@ -5,50 +5,210 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>NUSX Labs — Coming Soon</title>
     <link rel="icon" href="/mascot.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Hanken+Grotesk:wght@400;500&display=swap"
+    />
   </head>
   <body>
+    <header>
+      <img class="logo" src="/nusx-logo.svg" alt="NUSX" width="112" height="35" />
+    </header>
+
     <main>
-      <img class="logo" src="/nusx-logo.svg" alt="NUSX" width="160" height="50" />
-      <img src="/mascot.svg" alt="NUSX dog mascot" width="240" height="240" />
+      <svg class="mascot" viewBox="0 -24 240 264" role="img" aria-labelledby="mascot-title">
+        <title id="mascot-title">The NUSX dog mascot wearing a chef's hat</title>
+        <circle cx="120" cy="120" r="116" fill="#FFF3E0" />
+        <ellipse cx="120" cy="214" rx="70" ry="10" fill="#003D7C" opacity="0.12" />
+        <path d="M60 210c0-40 26-66 60-66s60 26 60 66z" fill="#E8A55B" />
+        <path d="M96 210c0-26 10-44 24-44s24 18 24 44z" fill="#FFF8EE" />
+        <path d="M84 150l36 16 36-16v14l-36 16-36-16z" fill="#003D7C" />
+        <circle cx="120" cy="180" r="9" fill="#EF7C00" stroke="#C25F00" stroke-width="2" />
+        <text x="120" y="184" font-family="system-ui, sans-serif" font-size="10" font-weight="700" fill="#fff" text-anchor="middle">X</text>
+        <path d="M58 58c-16 4-26 30-20 56 4 16 18 20 26 10 8-12 10-42 6-58-2-8-6-10-12-8z" fill="#8B5A2B" />
+        <path d="M182 58c16 4 26 30 20 56-4 16-18 20-26 10-8-12-10-42-6-58 2-8 6-10 12-8z" fill="#8B5A2B" />
+        <ellipse cx="120" cy="100" rx="58" ry="54" fill="#E8A55B" />
+        <ellipse cx="148" cy="88" rx="18" ry="20" fill="#C9813A" />
+        <ellipse cx="120" cy="124" rx="32" ry="24" fill="#FFF8EE" />
+        <g class="eyes">
+          <circle cx="98" cy="94" r="8" fill="#2B1B10" />
+          <circle cx="142" cy="94" r="8" fill="#2B1B10" />
+          <circle cx="101" cy="91" r="3" fill="#fff" />
+          <circle cx="145" cy="91" r="3" fill="#fff" />
+        </g>
+        <ellipse cx="84" cy="112" rx="8" ry="5" fill="#F4A3A3" opacity="0.7" />
+        <ellipse cx="156" cy="112" rx="8" ry="5" fill="#F4A3A3" opacity="0.7" />
+        <ellipse cx="120" cy="112" rx="9" ry="6.5" fill="#2B1B10" />
+        <path d="M120 118v6M120 124c-4 6-12 6-14 0M120 124c4 6 12 6 14 0" fill="none" stroke="#2B1B10" stroke-width="3" stroke-linecap="round" />
+        <path d="M113 130c0 10 14 10 14 0z" fill="#F07C8A" />
+        <g class="hat">
+          <g transform="translate(0 9)">
+          <path
+            d="M90 44c-14-2-20-16-12-26 6-8 16-8 22-4 2-12 12-20 22-18 10 0 18 8 20 18 6-4 16-4 22 4 8 10 2 24-12 26z"
+            fill="#fff"
+            stroke="#E3D3BC"
+            stroke-width="2"
+            stroke-linejoin="round"
+          />
+          <path d="M112 20c2 8 2 16 0 24M130 20c-1 8-1 16 0 24" fill="none" stroke="#EFE3D2" stroke-width="2" stroke-linecap="round" />
+          <rect x="88" y="40" width="64" height="16" rx="4" fill="#fff" stroke="#E3D3BC" stroke-width="2" />
+          <rect x="88" y="46" width="64" height="4" fill="#EF7C00" />
+          </g>
+        </g>
+      </svg>
+
       <h1>Coming Soon</h1>
-      <p>NUSX Labs is cooking...</p>
+      <p>NUSX Labs is cooking<span class="dots" aria-hidden="true"><span>.</span><span>.</span><span>.</span></span></p>
     </main>
+
+    <footer>labs.nusx.edu.sg</footer>
   </body>
 </html>
 
 <style is:global>
   :root {
-    color-scheme: light dark;
-  }
-  body {
-    font-family: system-ui, sans-serif;
-    line-height: 1.6;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0 1rem;
-    display: grid;
-    place-items: center;
-    text-align: center;
-  }
-  img {
-    max-width: 60vw;
-    height: auto;
-  }
-  .logo {
-    display: block;
-    margin: 0 auto 2rem;
+    --paper: #fbf5ec;
+    --glow: #ffe7c7;
+    --ink: #0c2340;
+    --ink-soft: #4a5a70;
+    --accent: #ef7c00;
+    --brand-blue: #003d7c;
+    color-scheme: light;
   }
   @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #0b1626;
+      --glow: #1d2f4b;
+      --ink: #fbf0e0;
+      --ink-soft: #a9b6c8;
+      color-scheme: dark;
+    }
     .logo {
       filter: invert(1);
     }
   }
+  ::selection {
+    background: var(--accent);
+    color: #fff;
+  }
+  body {
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0 1.25rem;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    background:
+      radial-gradient(ellipse 55% 45% at 50% 46%, var(--glow), transparent 70%),
+      var(--paper);
+    color: var(--ink);
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
+    line-height: 1.5;
+    text-align: center;
+  }
+  header {
+    padding-top: clamp(1.5rem, 5vh, 3rem);
+  }
+  .logo {
+    display: block;
+    margin: 0 auto;
+    width: 112px;
+    height: auto;
+  }
+  main {
+    align-self: center;
+    padding-block: 2rem 3rem;
+  }
+  .mascot {
+    display: block;
+    width: clamp(200px, 42vw, 280px);
+    height: auto;
+    margin: 0 auto 1.75rem;
+    overflow: visible;
+  }
+  .hat {
+    transform-box: fill-box;
+    transform-origin: 50% 100%;
+    animation: hat-drop 1100ms cubic-bezier(0.16, 1, 0.3, 1) 200ms both;
+  }
+  .eyes {
+    transform-box: fill-box;
+    transform-origin: 50% 50%;
+    animation: blink 5s ease-in-out 1.6s infinite;
+  }
   h1 {
-    margin: 1rem 0 0.25rem;
-    color: #ef7c00;
+    margin: 0;
+    font-family: 'Young Serif', Georgia, serif;
+    font-weight: 400;
+    font-size: clamp(2.75rem, 9vw, 5rem);
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--ink);
   }
   p {
-    margin: 0;
-    opacity: 0.8;
+    margin: 0.875rem 0 0;
+    font-size: clamp(1.0625rem, 2.4vw, 1.25rem);
+    color: var(--ink-soft);
+  }
+  .dots span {
+    display: inline-block;
+    animation: simmer 1.4s ease-in-out infinite;
+  }
+  .dots span:nth-child(2) {
+    animation-delay: 0.18s;
+  }
+  .dots span:nth-child(3) {
+    animation-delay: 0.36s;
+  }
+  footer {
+    padding-bottom: clamp(1.25rem, 4vh, 2.5rem);
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    color: var(--ink-soft);
+  }
+  @keyframes hat-drop {
+    0% {
+      transform: translateY(-46px) rotate(-14deg);
+    }
+    60% {
+      transform: translateY(2px) rotate(3deg) scaleY(0.94);
+    }
+    100% {
+      transform: translateY(0) rotate(-4deg);
+    }
+  }
+  @keyframes blink {
+    0%,
+    94%,
+    100% {
+      transform: scaleY(1);
+    }
+    97% {
+      transform: scaleY(0.1);
+    }
+  }
+  @keyframes simmer {
+    0%,
+    60%,
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    30% {
+      transform: translateY(-0.22em);
+      opacity: 0.55;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hat,
+    .eyes,
+    .dots span {
+      animation: none;
+    }
+    .hat {
+      transform: rotate(-4deg);
+    }
   }
 </style>
